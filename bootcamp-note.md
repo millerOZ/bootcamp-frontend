@@ -46,7 +46,7 @@ Aunque en realidad Markdown también se considera un lenguaje que tiene la final
 1. Recomendaciones
 1. ejemplo
 
-### defininicion ###
+### definición ###
 Resultado de imagen de css
 Hojas de estilo en cascada (o CSS, siglas en inglés de Cascading Stylesheets) es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.
 
