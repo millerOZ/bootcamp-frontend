@@ -5,7 +5,7 @@
 1. ejemplo
 
 ### definición ###
-Aunque en realidad Markdown también se considera un lenguaje que tiene la finalidad de permitir crear contenido de una manera sencilla de escribir, y que en todo momento mantenga un diseño ~~legible~~, así que para simplificar puedes considerar *Markdown* como un método de escritura. (*https://markdown.es/*)
+> Aunque en realidad Markdown también se considera un lenguaje que tiene la finalidad de permitir crear contenido de una manera sencilla de escribir, y que en todo momento mantenga un diseño ~~legible~~, así que para simplificar puedes considerar *Markdown* como un método de escritura. (*https://markdown.es/*)
 
 ### Sintaxis ###
 1.  pequeña lista de los *markdown* mas usados _ejemplo:_
@@ -83,3 +83,48 @@ mantenér el código
 * Clases y pseudoclases     **: 10**
 * Id                        **: 100**
 * Estilos en linea          **: 1000**
+
+
+### Aprendiendo Javascript ###
+
+## menu ##
+ * defininición
+ * closure function
+ * consejos
+
+### definición ###
+> La sintaxis es muy similar a otros lenguaje como Java y C, normas basicas que definen la sintaxis de **javascript** son las siguientes:
+* *No se tiene en cuenta los espacios en blanco y las nuevas líneas*
+* *Se distinguen las mayúsculas y minúsculas*
+* *No se define el tipo de las variables*
+* *No es necesario terminar cada sentencia con el caácter de punto y coma*
+* *Se pueden incluir comentarios*
+##### fuente: #####
+ [librosweb.es](http://librosweb.es/libro/javascript/)
+
+### closure function ###
+El consepto es *clausurar* el contexto en el que se ejecuta una función,
+_ejemplo__
+```javascript
+  function externa(x){
+    var variable = 3;
+
+    function interna(y){
+      console.log(x + y + (++variable));
+    }
+    interna(10);
+  }
+  externa(2);
+```
+`> 16`
+### consejos ###
+* Usar `===` para comparar objetos, igualdad estricta
+* mostar una ventana emergente solicitando la edad: `var age = prompt("cual es tu edad")`
+* para escribir javascript dentro de un string `yo tengo ${age} años`
+* Retorna el primer valor falso si existe `a && a.texto && a.edad`, hacer comprobaciones de carga de información
+* Retorna el primer valor verdadero si existe `a || a.text || a.edad`
+* El comando `let` a diferencia de `const`, permite reasignar
+* para testear se usa `console.assert(suma(2,5) == 7, "esto debe ser verdad")`
+* para pasar por valor un objeto se usa
+``` javascript
+var persona = Object.assign({},{nombre: "miller", apellido: "ossa"})```
