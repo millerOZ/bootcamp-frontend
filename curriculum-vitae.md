@@ -15,4 +15,4 @@ Internauta, cuando no lo soy estoy en el alma mater, estudiando Ingenieria de si
 *  Dos semestres en Mocoa-Putumayo *Instituto tecnino sistemas y capacitaciones* __(SISCAP)__  03/12/2009
 
 ### Espiritualidad ###
-No tengo una religión, pero estoy comprometido con el __Conocete a ti mismo__ , tal vez me deje influenciar un poco con la sabiduria de __Jiddu Krishnamurti__ y __Eckhart Tolle__ , pero no lo suficiente como para pretender la *Iluminación* .
+No tengo una religión, pero estoy comprometido con el __Conócete a ti mismo__ , tal vez me deje influenciar un poco con la sabiduria de __Jiddu Krishnamurti__ y __Eckhart Tolle__ , pero no lo suficiente como para pretender la *Iluminación* .
