@@ -1,1 +1,5 @@
-* [proyecto Bootcamp](project_bootcamp/index.html)
+
+
+* [proyecto Bootcamp](project_bootcamp)
+* [javascripting](javascripting)
+* [Curriculum Vitae](curriculum-vitae.md)
