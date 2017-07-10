@@ -1,1 +1,6 @@
-## este es el READMEN local ###
+
+
+
+* [proyecto Bootcamp](project_bootcamp)
+* [javascripting](javascripting)
+* [Curriculum Vitae](curriculum-vitae.md)
