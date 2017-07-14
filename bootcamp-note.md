@@ -91,6 +91,7 @@ mantenér el código
  * defininición
  * closure function
  * consejos
+ * eventos
 
 ### definición ###
 > La sintaxis es muy similar a otros lenguaje como Java y C, normas basicas que definen la sintaxis de **javascript** son las siguientes:
@@ -111,7 +112,7 @@ _ejemplo__
 
     function interna(y){
       console.log(x + y + (++variable));
-    }
+    }ta
     interna(10);
   }
   externa(2);
@@ -127,4 +128,10 @@ _ejemplo__
 * para testear se usa `console.assert(suma(2,5) == 7, "esto debe ser verdad")`
 * para pasar por valor un objeto se usa
 ``` javascript
-var persona = Object.assign({},{nombre: "miller", apellido: "ossa"})```
+var persona = Object.assign({},{nombre: "miller", apellido: "ossa"})
+```
+
+### Manejadores de eventos y variable this ###
+
+En los eventos, se puede utilizar la variable *this* para referirse al elemento HTML que ha provocado el evento.
+dentro del cpodigo de un evento, javascript crea automáticamente la variable *this*, que hace referencia al elemento XHTML que ha provocado el evento.
