@@ -1,12 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
-  background: #EEE;
+  background: #E8E8E8;
+  color: #444;
+  font-size: 16px;
+  text-align: center;
+}
+header{
+  background: #444;
+  color: white;
+  padding: 1em;
 }
 h1 {
- 
-}
-img{
+  font-size: 50px;
+  font-family: 'kaushan Script',verdana,sans-serif;
+   font-weight: normal;  /*quitar negrita*/
 
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
+}
+.descripcion p{
+  border: 1px solid #444;
+
+  margin: 10px;
+
+}
+.img-container{
+  border: 5px solid white;
+  width: 300px;
+  /*border-radius: 2px;
+  margin: 50px 20px;*/
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  text-align: auto;
+}
+.img-container img{
+ /*text-align: center;*/
+}
+
+img{
+max-width: 100%;
+
 }
