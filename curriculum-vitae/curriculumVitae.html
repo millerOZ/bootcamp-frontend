@@ -6,20 +6,30 @@
     <link rel="stylesheet" href="css/estilos.css">
     <meta charset="utf-8">
     <title>Mi curriculum vitae</title>
+    <script src="js/jquery.stellar.min.js"></script>
   </head>
   <body>
+    <div class="titulo">
+       <h1>¿Quién Soy?</h1>
+    </div>
+
     <header>
-      <h1>¿Quien Soy?</h1>
+
     <div class="descripcion">
-          <p>¡Vaya pregunta!, no tengo la más mínima idea, aun no encuentro algo que me defina, la que mas se aproxima es la de un simple mortal que le apasiona la programación, quien se mantiene en la terqueda de aprender esta disciplina. </p>
+          <p>"¡Vaya pregunta!, no tengo la más mínima idea, aun no encuentro algo que me defina, la que mas se aproxima es la de un simple mortal que le apasiona la programación, quien se mantiene en la terqueda de aprender esta disciplina." </p>
+          <h2>  Miller Ossa Samboni</h2>
     </div>
         <div class="img-container">
-            <img src="img/de_mi.jpg" alt="retrato">
+            <img src="img/mi.jpg" alt="retrato">
         </div>
     </header>
-      <section>
+      <section class="content" id="content_que_hago" data-stellar-background-ratio="0.5">
         <h1>¿Que hago?</h1>
-        <p>Internauta, cuando no lo soy estoy en el alma mater estudiando Ingenieria de sistemas e informatica</p>
+        <!-- <figure>
+          <img src="img/code.jpg" alt="">
+        </figure> -->
+        <!-- <p>Internauta, cuando no lo soy estoy en el alma mater estudiando Ingenieria de sistemas e informatica.
+        Tengo las cualidades y conocimientos necesarios para emprender proyectos relacionados con la programación.</p> -->
       </section>
       <section>
         <h1>Logros y áreas de especialización</h1>
@@ -36,17 +46,65 @@
        </section>
        <section>
          <h1>Tiempo libre</h1>
-            <ul>
+         <div class="carousel-grid">
+            <figure class="carousel-item">
+              <img src="https://placeimg.com/500/500/draw" alt="">
+              <figcaption>Dibujo</figcaption>
+            </figure>
+            <figure class="carousel-item">
+              <img src="https://placeimg.com/500/500/electronic" alt="">
+              <figcaption>Electronica</figcaption>
+            </figure>
+            <figure class="carousel-item">
+              <img src="https://placeimg.com/500/500/guitar" alt="">
+              <figcaption>GUitarra</figcaption>
+            </figure>
+         </div>
+            <!-- <ul>
               <li>Dibujar</li>
-                 <p>Es la mejora manera para tranquilizar la mente, el dibujar te obliga a mantenerte tranquilo, relajado, de me puedo abstraer y poder aclarar mis ideas  </p>
+                 <p>Es la mejora manera para tranquilizar la mente, el dibujar te obliga a mantenerte tranquilo, relajado, me puedo abstraer y poder aclarar mis ideas  </p>
               <li>Tocar la guitarra</li>
+              <figure>
+                <img src="img/draw.jpg" alt="">
+              </figure>
               <p>soy autodidacta, escucho una canción e intento que suene en la guitarra, en general me gusta coger la guitarra cuando estoy muy feliz o me siento bajo de energias, considero que la musica es un medio por el cual podemos sanar</p>
               <li>Aprender cosas nuevas </li>
-              <p></p>
+              <p>Todo relacionado con software libre e Hardware libre (arduino-raspberry)</p>
+             hacer pagina responsive
+              <div class="carousel-grid">
+                 <figure class="carousel-item">
+                   <img src="https://placeimg.com/500/500/any" alt="Place Image">
+                   <figcaption>Lorem</figcaption>
+                 </figure>
+                 <figure class="carousel-item">
+                   <img src="https://placeimg.com/500/500/any" alt="Place Image">
+                   <figcaption>Lorem</figcaption>
+                 </figure>
+                 <figure class="carousel-item">
+                   <img src="https://placeimg.com/500/500/any" alt="Place Image">
+                   <figcaption>Lorem</figcaption>
+                 </figure>
+                 <figure class="carousel-item">
+                   <img src="https://placeimg.com/500/500/any" alt="Place Image">
+                   <figcaption>Lorem</figcaption>
+                 </figure>
+                 <figure class="carousel-item">
+                   <img src="https://placeimg.com/500/500/any" alt="Place Image">
+                   <figcaption>Lorem</figcaption>
+                 </figure>
+               </div>
             </ul>
+            -->
        </section>
-      <footer>
+       <!-- <section>
+         <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" >
 
-      </footer>
+         </form>
+       </section> -->
+      <!-- <footer>
+        <a href="#">Twitter</a>
+
+      </footer> -->
   </body>
 </html>
