@@ -46,20 +46,19 @@
       </form>
     </div>
     <script>
-        //es necesario el DOMContentLoaded para cargar todos los archivos 
+        //es necesario el DOMContentLoaded para cargar todos los archivos
       document.addEventListener('DOMContentLoaded', function() {
-        // TODO: Select the data and print it in the console
+        // TODOSelect the data and print it in the console
           var form = document.querySelector('#exampleInputEmail');
             //evitar que al dar enter se refresque
             form.addEventListener('submit', function(event){
-                event.preventDefault();
-                
+                   event.preventDefault();
 
-                              console.log(form);
+                     console.log(form);
                       var checkBox = document.querySelectorAll('.radio');
 
                       for(var i = 0; i < checkRadios.length; i++){
-                          
+
                             if(checkRadios[i].spellcheck == true){
                               console.log(checkRadios[i].textContent);
                           }
@@ -67,11 +66,11 @@
                       var commentario= document.querySelector('#exampleComment');
                       alert(email);
 
-                
+
             });
-          
-          
-          
+
+
+
       });
     </script>
   </body>

@@ -10,9 +10,21 @@ header{
   background: #444;
   color: white;
   padding: 1em; //relativo a la fuente
+  position: relative;
 }
 nav {
   background : #22BCE0;
+  height: 25px
+}
+nav .menu{
+  margin: 0;
+}
+nav .menu li{
+  display: inline-block;
+}
+nav .menu li a{
+  color: white;
+  text-decoration: none;
 }
 h1 {
 

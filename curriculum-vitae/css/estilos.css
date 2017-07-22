@@ -18,10 +18,12 @@ header{
   padding: 1em;
   box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
   z-index: 10;
+  height: 250px;
 }
 .titulo h1{
     background: #444;
     color: white;
+    height: 45px;
     text-align: center;
 }
 h1 {
@@ -44,15 +46,19 @@ h2 {
 }
 .img-container{
   order: -1;
-  width: 300px;
+  width: 200px;
   text-align: auto;
 }
 .img-container img{
  /*text-align: center;*/
  border-radius: 35%;
+
+
 }
 img{
   max-width: 100%;
+display: flex;
+z-index: 5;
 }
 /*que hago parallax*/
 .content{
@@ -70,24 +76,104 @@ img{
 #content_que_hago h1{
   position: absolute;
   text-align: center;
-  color: white;
   left: 0; right: 0; top: 0; bottom: 0;
   margin: auto;
   display: block;
   height: 30px;
 }
-/*carousel tiempo libre*/
+.content_logros h1{
+  padding-left: 30px;
+  padding-top: 10px;
+}
+/*diseño */
+#content_que_hago h1{
+  color: #fff;
+}
+.content_person h1{
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+  padding-left: 30px;
+  text-shadow: 0px 0px 14px rgba(0,0,0,0.75);
+}
+/*espiritualidad */
+.content_person_img{
+  background-image: url(../img/spirit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 305px;
+  opacity: 0.9;
+}
+html.mobile .content_person {
+ height: 100vh;
+  padding-top: 20vh;
+}
+.content_person p span{
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  background-color: rgba(8,8,42,0.75);
+  color: #fff;
+  padding: 20px 20px;
+  line-height: 1.4em;
+  box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
+}
 .carousel-grid{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+/*carousel tiempo libre*/
+.carousel-gridFreeTime{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.carousel-gridFreeTime .carousel-itemFreeTime{
+  cursor: pointer;
+}
+.carousel-itemFreeTime{
+  border: 10px solid white;
+  border-radius: 2px;
+  margin: 50px 20px;
+  width: 300px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+}
+.carousel-itemFreeTime img{
+  display: block;
+  width: 100%;
+  user-select: none;
+}
+.carousel-itemFreeTime figcaption{
+  height: 40px;
+  padding: 10px 0;
+  font-size: 14px;
+  background: white;
+}
 .carousel-grid .carousel-item{
   cursor: pointer;
 }
 .carousel-item{
-
+  width: 200px;
   padding: 10px 0;
   font-size: 14px;
   background: white;
+}
+.carousel-item img {
+  display: block;
+  width: 100%;
+  opacity: 0.9;
+  user-select: none;
+}
+.carousel-item figcaption{
+  border: 1px solid black;
+  overflow: inherit;
+  font-size: 14px;
+  height: 40px;
+  padding: 10px 5px;
+  height: 105px;
+  background: white;
+}
+.lacnem{
+  width: 600px;
 }
