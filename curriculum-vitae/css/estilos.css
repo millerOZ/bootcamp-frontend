@@ -177,3 +177,39 @@ html.mobile .content_person {
 .lacnem{
   width: 600px;
 }
+/*posts*/
+.posts{
+  padding: 0.5em;
+}
+.posts .post{
+  background: white;
+  border-radius: 0 0 0.5em 0.5em;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+  color: #7A7A7A;
+}
+.posts .post .description{
+  color: #444;
+}
+.posts .post .description{
+  color: #444;
+}
+.posts .post .description .detalles{
+  height: 160px;
+  margin-left: 130px; 
+}
+.posts .post .description .detalles .titulo {
+ color: #444;
+ font-size: 18px;
+ font-style: italic; 
+ margin: 0;
+ padding: 0.5em 0.5em 0 0;
+}
+.posts .post .description .imagen{
+ float: left;
+}
+.posts .post .description .imagen img{
+  height: 150px;
+  padding: 0.5em;
+  vertical-align: top;
+  width: 160px;
+}

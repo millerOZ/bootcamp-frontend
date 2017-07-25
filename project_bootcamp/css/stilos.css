@@ -4,26 +4,49 @@
 body{
     background: #E8E8E8;
     color: #444;
+    font-family: Arial;
     font-size: 16px; /*por defecto */
 }
 header{
   background: #444;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.2);
   color: white;
-  padding: 1em; //relativo a la fuente
+  overflow: hidden;
+  padding: 0.5em; //relativo a la fuente
   position: relative;
+  z-index: 1;
 }
+
 nav {
   background : #22BCE0;
-  height: 25px
+  border-left: 15px solid white;
+  position: relative;
+}
+nav::before{
+  border-bottom: 20px solid transparent;
+  border-left: 7px solid white;
+  border-top: 20px solid transparent;
+  content: "";
+  left: 0;
+  position: absolute;
 }
 nav .menu{
+  height: 40px;
+  line-height: 40px;
   margin: 0;
+  padding: 0;
+  /*overflow-x: auto;*/
+  white-space: nowrap;
 }
 nav .menu li{
   display: inline-block;
 }
 nav .menu li a{
+  /*border: 1px solid black;*/
   color: white;
+  margin: 0 0.5em;
+  display: block;
+  padding: 0 0.2em;
   text-decoration: none;
 }
 h1 {

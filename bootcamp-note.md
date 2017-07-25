@@ -20,14 +20,15 @@
 
 1. para añadir una foto desde **markdown** `![foto](http://..)`
 ### Ejemplo ###
-1.
+1. :tada:
+![markdown](https://maxcdn.icons8.com/iOS7/PNG/512/Programming/markdown-512.png)
 # Aprendiendo __Git__  #
 ## menu ##
 1. definición
 1. comando con su definición
 
 ### definición ###
-**Git** es un sistema de control de versiones que usan los desarrolladores
+**Git** es un sistema de control de versiones que usan los desarrolladores diseñado por __Linus Torvalds__
 
 ### comandos con su definición ###
 1. **git init** creamos un nuevo repositorio (local)
@@ -50,16 +51,11 @@
 Resultado de imagen de css
 Hojas de estilo en cascada (o CSS, siglas en inglés de Cascading Stylesheets) es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.
 
-*em* Son la unidad relativa por excelencia, y a veces resulta confuso entenderla. Por definición un em es igual al valor del font-size del elemento al que pertenece. Si el elemento que contiene una propiedad en em no tiene un font-size definido, lo heredará del padre, o del primer ancestro con font-size declarado – si ninguno tiene font-size declarado, tomará el del HTML: 100% -Si un elemento tiene un font-size declarado, todo otro valor dado en em en ese mismo elemento equivale a ese *font-size:*.
-
-`1em ` equivale a `14px`
-`list-style-type:` sirve para cambiar el estilo a las viñetas en el listado
-*
-## Especificidad ##
-la Especificidad gana a la cascada es un valor que adquieren los selectores y que determinan que reglas CSS (o estilos) se aplican a un elemento cuando existen conflictos
+### Especificidad ###
+La Especificidad gana a la cascada es un valor que adquieren los selectores y que determinan que reglas CSS (o estilos) se aplican a un elemento cuando existen conflictos
 
 
-## pseudo clases ##
+### pseudo clases ###
 `:hover` cuando se pasa el cursor por ensima del elemento
 `:active` Cuando se hace click
 `:visited` un enlace al que ya se visito
@@ -69,26 +65,31 @@ la Especificidad gana a la cascada es un valor que adquieren los selectores y qu
 `:selection` para aplicar estilos a la seleccion
 `:target` selecciona el destino de un enlace interno
 
-
-## Recomendaciones ##
-mantenér el código
+### Recomendaciones ###
+mantenér el código :
 * ordenado
 * simple
 * sin repeticiones
 
 `!importan` siempre gana sobre Especificidad
 `!importan > Especificidad > cascada`
-## ¿Como se calcula la Especificidad ? ##
+### ¿Como se calcula la Especificidad ? ###
 * Etiquetas                 **: 1**
 * Clases y pseudoclases     **: 10**
 * Id                        **: 100**
 * Estilos en linea          **: 1000**
 
+### em ###
+*em* Son la unidad relativa por excelencia, y a veces resulta confuso entenderla. Por definición un em es igual al valor del font-size del elemento al que pertenece. Si el elemento que contiene una propiedad en em no tiene un font-size definido, lo heredará del padre, o del primer ancestro con font-size declarado – si ninguno tiene font-size declarado, tomará el del HTML: 100% -Si un elemento tiene un font-size declarado, todo otro valor dado en em en ese mismo elemento equivale a ese *font-size:*.
 
-### Aprendiendo Javascript ###
+`1em ` equivale a `14px`
+`list-style-type:` sirve para cambiar el estilo a las viñetas en el listado
+
+# Aprendiendo Javascript #
 
 ## menu ##
  * defininición
+ * DOM
  * closure function
  * consejos
  * eventos
@@ -103,9 +104,16 @@ mantenér el código
 ##### fuente: #####
  [librosweb.es](http://librosweb.es/libro/javascript/)
 
+### DOM ###
+:tada:
+Transforma todos los documentos HTML en un conjunto de elementos  llamados _nodos_ que están interconectados y que representan los contenidos de las páginas web y las relaciones entre ellos. Por su aspecto, la unión de todos se llama _"árbol de nodos"_
+
+![arbol de nodos](arbol_nodos.gif)
+***
+__fuente :__ [librosweb](http://librosweb.es/libro/javascript/capitulo_5/arbol_de_nodos.html)
 ### closure function ###
 El consepto es *clausurar* el contexto en el que se ejecuta una función,
-_ejemplo__
+_ejemplo :_
 ```javascript
   function externa(x){
     var variable = 3;
