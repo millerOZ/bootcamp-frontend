@@ -8,7 +8,7 @@
 * ~~[Curriculum Vitae with Contact Form]()~~
 * ~~[Curriculum Vitae Contact Form with DOM selection]()~~
 * ~~[Curriculum Vitae with Responsive design]()~~
-* [Carousel grid with Flexbox]()
+* [Carousel grid with Flexbox](flexbox/)
 * [Webtask exercise](webtask/documentacion_flickrBot.md)
 * ~~[Bank Account Exercise]()~~
 * [JavaScripting Exercises](javascripting)
