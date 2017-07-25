@@ -143,3 +143,19 @@ var persona = Object.assign({},{nombre: "miller", apellido: "ossa"})
 
 En los eventos, se puede utilizar la variable *this* para referirse al elemento HTML que ha provocado el evento.
 dentro del cpodigo de un evento, javascript crea automáticamente la variable *this*, que hace referencia al elemento XHTML que ha provocado el evento.
+
+# Aprendiendo locaStorage   #
+* es un objecto al que se le asigna un valor para almacenar datos,( es una mini base de datos en lado del cliente), los datos almacenasdos en localStorage no tienen fecha de expiración, los datos almacenados en sessionStorage son eliminados cuando finaliza la sesion de navegación - lo cual ocurre cuando se cierra el navegador
+```javascript
+localStorage.setItem('miGato', 'Juan');
+```
+###  A tener en cuenta ###
+* limite del locaStorage 5 Mb
+* localStorage funciona con clave, valor
+* localStorage lo almacena con string
+
+### JSON ###
+* `JSON.stringify(valor[,remplazo[, espacio]])`
+El valor será convertido a una cadena JSON ,
+*stringify* convierte tal como escribi a un string,
+__definicion MDN__ El método JSON.stringify() convierte un valor dado en javascript a una cadena  JSON, opcionalmente reemplaza valores si es especificada la función de remplazo, o si se especifican las propiedades mediante un array de reemplazo.
