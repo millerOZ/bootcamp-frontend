@@ -2,7 +2,7 @@
 
 ## ¿Quien soy? ##
 ![yo](img/intigrillos.jpg)
->Tengo la buena fortuna de haber nacido en el Putumayo, dentro de cuna campesina de llevar este amor por la madre tierra, de conocer atardeceres , de memorias, de saberes ancestrales.
+>Tengo la buena fortuna de haber nacido en el Putumayo, dentro de cuna campesina de llevar este amor por la madre tierra, de memorias, de saberes ancestrales.
 
 __Nombre :__ Miller Ossa Samboni
 
@@ -10,10 +10,8 @@ __Correo :__ mikler.ossa@gmail.como
 
 __Telefono :__ 3508987994
 
-Tengo las cualidades y conocimientos necesarios para emprender proyectos relacionados con la programación.
-
 ## ¿Qué hago ? ##
-
+Tengo las cualidades y conocimientos necesarios para emprender proyectos relacionados con la programación.
 ### Educación ###
 * Estudio _Ingenieria de Sistemas e informatica_ en Universidad Nacional de Colombia Sede Medellín, quinto semestre  
 
@@ -24,6 +22,13 @@ Tengo las cualidades y conocimientos necesarios para emprender proyectos relacio
 *  Dos semestres en Mocoa-Putumayo *Instituto tecnino sistemas y capacitaciones* __(SISCAP)__  03/12/2009
 
 ### Espiritualidad ###
-No tengo una religión, pero estoy comprometido con el __Conócete a ti mismo__ , tal vez me deje influenciar un poco con la sabiduria de __Jiddu Krishnamurti__ y __Eckhart Tolle__ , pero no lo suficiente como para pretender la *Iluminación* .
+Estoy comprometido con el __Conócete a ti mismo__ , tal vez me deje influenciar un poco con la sabiduria de __Jiddu Krishnamurti__ y __Eckhart Tolle__ , pero no lo suficiente como para pretender la *Iluminación* .
 
 ### Tiempo libre ###
+* Realizo pequeños proyectos con hardware libre :
+    1. raspberry pi 3
+    1. arduino
+    1. Sim900
+    1. etc
+* Unos de los que mas disfruto es tocar la guitarra
+* Tambien realizo pequeños dibujos digitales como hobbie (aprendiendo) ![](img/miu.png)
