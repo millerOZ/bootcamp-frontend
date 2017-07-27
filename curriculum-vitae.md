@@ -1,8 +1,8 @@
 # Curriculum vitae #
 
 ## ¿Quien soy? ##
-
->Tengo la buena fortuna de haber nacido en el Putumayo, dentro de cuna campesina de llevar este amor por la pachamama, de conocer atardeceres , de memorias, de saberes ancestrales.
+![yo](img/intigrillos.jpg)
+>Tengo la buena fortuna de haber nacido en el Putumayo, dentro de cuna campesina de llevar este amor por la madre tierra, de conocer atardeceres , de memorias, de saberes ancestrales.
 
 __Nombre :__ Miller Ossa Samboni
 
@@ -15,7 +15,7 @@ Tengo las cualidades y conocimientos necesarios para emprender proyectos relacio
 ## ¿Qué hago ? ##
 
 ### Educación ###
-* Estudio _Ingenieria de Sistemas e informatica_ en Unal Med, quinto semestre  
+* Estudio _Ingenieria de Sistemas e informatica_ en Universidad Nacional de Colombia Sede Medellín, quinto semestre  
 
 ### Logros y áreas de especialización ###
 *  Seminario basico en __Python__ 40 horas, 22/04 2017,Universida Nacional de Colombia
