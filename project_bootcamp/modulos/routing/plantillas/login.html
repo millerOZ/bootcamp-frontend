@@ -1,0 +1,44 @@
+<div class="container" ng-controller="loginUser">
+
+    <h1> Login </h1>
+
+    <div class="col-sm-10">
+
+        <form id="formulario" name="formulario" ng-submit="validateLogin()" novalidate ng-hide="loginOk">
+
+            <label>Nombre</label>
+            <input type="text" name="nombre" class="form-control" ng-model="user.nombre" required />
+
+            <div ng-show="!user.nombre && formulario.$submitted "  class="alert alert-warning">
+            Debes rellenar esta casilla
+            </div>
+
+
+
+            <label>Email</label>
+            <input type="text" name="email" class="form-control" ng-model="user.email"/>
+
+            <div class="alert alert-warning"   ng-show="formulario.$submitted && !user.email">
+                Debes rellenar esta casilla
+            </div>
+
+
+
+            <br>
+            <input class="btn" type="submit"  value="LOGIN" />
+
+
+        </form>
+
+
+         <div ng-show="loginOk" class="well">
+
+            <h3>¡ Bienvenido !</h3>
+
+            <h4> {{user.nombre}} ({{user.email}}) </h4>
+
+        </div>
+
+    </div>
+
+</div>
