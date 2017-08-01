@@ -108,7 +108,7 @@ mantenér el código :
 :tada:
 Transforma todos los documentos HTML en un conjunto de elementos  llamados _nodos_ que están interconectados y que representan los contenidos de las páginas web y las relaciones entre ellos. Por su aspecto, la unión de todos se llama _"árbol de nodos"_
 
-![arbol de nodos](arbol_nodos.gif)
+![arbol de nodos](img/arbol_nodos.gif)
 ***
 __fuente :__ [librosweb](http://librosweb.es/libro/javascript/capitulo_5/arbol_de_nodos.html)
 ### closure function ###
@@ -159,3 +159,109 @@ localStorage.setItem('miGato', 'Juan');
 El valor será convertido a una cadena JSON ,
 *stringify* convierte tal como escribi a un string,
 __definicion MDN__ El método JSON.stringify() convierte un valor dado en javascript a una cadena  JSON, opcionalmente reemplaza valores si es especificada la función de remplazo, o si se especifican las propiedades mediante un array de reemplazo.
+
+# Modulos #
+## Comportamiento objectos mediante módulos ##
+> Comportamiento super importante de Components.utils.import es que los módulos son cacheados cuando se cargan e importaciones posteriores no recargan una nueva versión del módulo, sino que usan la version cacheada anteriormente. Esot significa que un módulo dado será compartido cuando sea importado varias veces. Cualquier modificacion a datos, objectos o funciones estarán disponibles en cualquier alcance (scope) que haya importado el módulo. Por ejemplo, si el módulo de ejemplo fue importado en dos alcances (scope) diferentes de javascript, los cambios en un alcance(scope) seŕan visibles desde el otro alcance(scope)
+
+_Alcance(Scope)1:_
+```javascript
+Components.utils.import("resource://app/modules/my_module.jsm");
+
+alert(bar.size + 3);  // muestra "6"
+
+bar.size = 10;
+```
+_Alcance(scope)2:_
+```javascript
+Components.utils.import("resource://app/modules/my_module.jsm");
+
+alert(foo());         // muestra "foo"
+alert(bar.size + 3);  // muestra "13"
+```
+* javascript pone arriba las funciones
+* si son declaradas como const no se pueden pueden llamar antede de definirlas
+
+### _ejemplo patrón del módulo revelador_ ###   
+```javascript
+var miModuloRevelador = (function () {
+    var nombre = "Juan Ramos",
+        saludo = "Hola !";
+
+	// Función privada
+    function imprimirNombre() {
+        console.log("Nombre:" + nombre);
+    }
+
+	// Función pública
+    function asignarNombre(nuevoNombre) {
+        nombre = nuevoNombre;
+    }
+
+    // Revelar accesos públicos (opcionalmente con otros nombres)
+    return {
+        setName: asignarNombre,
+        greeting: saludo
+    };
+})();
+
+miModuloRevelador.setName("Carlos");
+```
+## tips ##
+* const solo se permite modificar si es objectos
+* let es visible dentro del la funcion definida
+* Debes tener en cuenta que la variable no está recibiendo la función directamente, sino más bien el resultado de ejecutar la función, es decir, el objeto que se devuelve a través del return de la función anónima.
+
+## Common JS ##
+ * es el remplazo de _patrón del módulo revelador_, ejemplos de estos son browserify
+
+## npm ##
+* npm public -> para publicar paquete en añadido en las dependencias
+* en node-modules -> se guarda el proyecto que descarga de internet
+## animaciones CSS 3D##
+* transform-style: preserve-3d  -> al padre para cambiar contenido a sus hijos
+* perspective: 600px;
+# promesas #
+> **ejemplo :** Supongamos que vamos a comprar comida a un restaurante de comida rápida, cuando terminamos de pagar por nuestra comida nos dan un ticket con un número, cuando llamen a ese número podemos entonces ir a buscar nuestra comida.
+
+>Ese ticket que nos dieron es nuestra promesa, ese ticket nos indica que eventualmente vamos a tener nuestra comida, pero que todavía no la tenemos. Cuando llaman a ese número para que vayamos a buscar la comida entonces quiere decir que la promesa se completó. Pero resulta que una promesa se puede completar correctamente o puede ocurrir un error, ¿Qué error puede ocurrir en nuestro caso? Por ejemplo puede pasar que el restaurante no tenga más comida, entonces cuando nos llamen con nuestro número pueden pasar dos cosas.
+
+1. Nuestro pedido se resuelve y obtenemos la comida.
+1. Nuestro pedido es rechazado y obtenemos una razón del por qué.
+[fuente](https://platzi.com/blog/que-es-y-como-funcionan-las-promesas-en-javascript/)
+
+```javascript
+const ticket = getFood();
+
+ticket
+	.then(food => eatFood(food))
+	.catch(error => getRefund(error));
+```
+## metodos de promice ##
+Las promesas se crean usando un constructor llamado Promise y pasándole una función que recibe dos parámetros, _resolve_ y _reject_, que nos permiten indicarle a esta que se resolvió o se rechazó.
+
+```javascript
+const promise = new Promise(function (resolve, reject){
+	const number = Math.floor(Math.random() * 10);
+
+	setTimeout(
+		() => number > 5
+			? resolve(number)
+			: reject(new Error('Menor a 5')),
+		1000
+	);
+});
+
+promise
+	.then(number => console.log(number))
+	.catch(error => console.error(error));
+```
+### tiene 3 estados ###
+1. Pendiente
+1. Resuleta
+1. Rechazada
+
+# webpack #
+Su utilidad reside en la fragmentación de código: no todas las partes de una webapp requieren todo el código JavaScript, por eso se __encarga de cargar sólo las partes necesarias en cada petición.__
+* exportar funciones con la palabra _export_ al inicio
+*export default* exporta la funcion declarada por defecto
