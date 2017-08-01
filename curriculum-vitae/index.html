@@ -10,15 +10,13 @@
   </head>
   <body>
     <header>
-      <h2>Contacto</h2>
-       <ul>
-         <li>Mikler.ossa@gmail.com</li>
-         <li>+573508987994</li>
-         <li>@miller_ossa</li>
-         <li>Miller Ossa Samboni</li>
-       </ul>
-        <div class="img-container">
-            <img src="img/mi.jpg" alt="retrato">
+        <div class="titular">
+            <h1 class="titulo">Miller Ossa Samboni</h1>
+        </div>
+        <div class=usuario>
+           <figure class="avatar">
+               <img src="img/mi.jpg" alt="Miller">
+           </figure> 
         </div>
     </header>
       <section class="content" id="content_que_hago" data-stellar-background-ratio="0.5">
@@ -26,34 +24,15 @@
         <!-- <p>Internauta, cuando no lo soy estoy en el alma mater estudiando Ingenieria de sistemas e informatica.
         Tengo las cualidades y conocimientos necesarios para emprender proyectos relacionados con la programación.</p> -->
       </section>
-      <section>
+      <section class="educacion">
         <h1>Educación </h1>
         <ul>
           <li> Estudiante quinto semestres de Ingenieria de sistemas e informatica en Universiada Nacional de Colombia Sede Medellín 02/08/2017</li>
         </ul>
       </section>
-      <h1>Logros y áreas de especialización</h1>
-      <section class=" posts">
-        
-       <!--  <div class="carousel-grid">
-           <figure class="carousel-item">
-             <img src="img/python-logo.jpg" alt="">
-             <figcaption>Seminario basico en Python 40 horas Universidad Nacional de Colombia Sede Medellín 22/4/2017</figcaption>
-           </figure>
-           <figure class="carousel-item">
-             <img src="img/origin.jpg" alt="">
-             <figcaption>Seminario en texto y la imagen: Espiritualidad Afro e Indígena en Colombia 23/8/2016</figcaption>
-           </figure>
-           <figure class="carousel-item lacnem" >
-             <img src="img/banner2015.jpg" alt="">
-             <figcaption>Asistente 6th Latin American Conference on Neworked and Electronic Media (LACNEM-2015) 23/9/2015</figcaption>
-           </figure>
-           <figure class="carousel-item">
-             <img src="img/siscap.jpg" alt="">
-             // overflow para controlar el desbprde 
-             <figcaption>Dos semestres en tecnico de sistema en Mocoa-Putumayo Instituto tecnico sistemas y capacitaciones (SISCAP) 3/12/2009</figcaption>
-           </figure>
-        </div> -->
+      
+      <section class="posts logros">
+         <h1>Logros y áreas de especialización</h1>
         <article class="post">
            <div class="description">
              <figure class="imagen">
@@ -103,16 +82,18 @@
            </div>
         </article>
       </section>
-
         
-           <div class="content_person content data-stellar-background-ratio="0.5"">
-             <h1>Espiritualidad</h1>
-             <div class="content_person_img"></div>
-             <p><span>Tengo el interes en el "conócete a ti mismo", tal vez me deje influenciar un poco por mis gurús Jiddu Krishnamurti y Eckhart Tolle, no lo suficiente como para pretender la Iluminación</span></p>
+     
+        
+           <div class="content"  id="content5" content data-stellar-background-ratio="0.5">
+                <div class="content_person">
+                 <h1>Espiritualidad</h1>
+              </div>
+             <p><span>Tengo el interes en el "γνῶθι σεαυτόν" (Conócete a ti mismo ), tal vez me deje influenciar un poco por Jiddu Krishnamurti y Eckhart Tolle. </span></p>
            </div>
 
        
-       <section>
+       <section class="tiempo_libre">
          <h1>Tiempo libre</h1>
          <div class="carousel-gridFreeTime">
            <figure class="carousel-itemFreeTime">
@@ -130,13 +111,7 @@
          </div>
 
             <!-- <ul>
-              <li>Dibujar</li>
-                 <p>Es la mejora manera para tranquilizar la mente, el dibujar te obliga a mantenerte tranquilo, relajado, me puedo abstraer y poder aclarar mis ideas  </p>
-              <li>Tocar la guitarra</li>
-              <figure>
-                <img src="img/draw.jpg" alt="">
-              </figure>
-              <p>soy autodidacta, escucho una canción e intento que suene en la guitarra, en general me gusta coger la guitarra cuando estoy muy feliz o me siento bajo de energias, considero que la musica es un medio por el cual podemos sanar</p>
+            
 
              hacer pagina responsive
               <div class="carousel-grid">
@@ -164,12 +139,31 @@
             </ul>
             -->
        </section>
-       <!-- <section>
-         <form class="" action="index.html" method="post">
-            <input type="text" name="" value="" >
-
+        <section>
+             <h1>Contacto</h1>
+         <form class="form_contact" action="" method="form-contact">
+            <div class="form-group">
+               <input placeholder="nombre" type="text" name="nombre" maxlength="15">
+             </div>
+             <div class="form-group">
+               <input placeholder="apellido" type="text" name="apellido" maxlength= "20">
+             </div>
+              <div class="form-group">
+               <input placeholder="email" type="text" name="email" value="" maxlength= "20">
+             </div>
+             <div class="form-group">
+               <textarea  rows="4" cols="50" name="comentario" >
+             </textarea>
+             </div>
+           <!--button-->
+             <div class="button-bar">
+                 
+                 <button name="btn-add" title="guardar nuevo contacto">Enviar<i class="fa fa-floppy-o"></i></button>
+                 <button name="btn-edit" title="actualizar contacto">Editar<i class="fa fa-pencil"></i></button>
+                 <button name="btn-delete" title="eliminar nuevo contacto">Eliminar<i class="fa fa-trash"></i></button>
+             </div>
          </form>
-       </section> -->
+       </section> 
       <footer>
           <h3>
             <strong>Creado por Miller Ossa Samboni</strong>

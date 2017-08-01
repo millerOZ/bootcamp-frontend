@@ -3,33 +3,61 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*movile*/
-@media()
+/*movile
+@media()*/
 body{
-  background: #E8E8E8;
+  /*background: #E8E8E8;*/
+    background: #3a8282;
   color: #444;
   font-size: 16px;
   text-align: center;
 }
 header{
-  display: flex;
-  background: #444;
-  color: white;
-  padding: 1em;
-  box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
-  z-index: 10;
-  height: 250px;
+    padding: 0.5em;
+    background: #584e96;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+    position: relative;
+    height: 195px;
 }
-.titulo h1{
+header .titular{
+    margin 0 80px 0 70px;
+}
+header .titular .titulo{
+ /* display: flex;*/
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+  /*z-index: 10;*/
+    padding: 0;
+    margin: 0;
+}
+header .usuario{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.titular h1{
+  /*font-size: 50px;*/
+  font-family: 'kaushan Script',verdana,sans-serif;
+  font-weight: normal;  
+}
+header .usuario .avatar img{
+    border-radius: 0 30px;
+    border: 1px solid white;
+     float: left;
+    width: 150px;
+   
+}
+/*.titulo h1{
     background: #444;
     color: white;
-    height: 45px;
+   
     text-align: center;
-}
+}*/
 h1 {
   font-size: 50px;
   font-family: 'kaushan Script',verdana,sans-serif;
-  font-weight: normal;  /*quitar negrita*/
+  font-weight: normal;  quitar negrita
 }
 h2 {
   text-align: right;
@@ -37,20 +65,7 @@ h2 {
   padding-right: 30px;
 
 }
-footer{
-  background: #555;
-  color: rgba(white,0.5);
-  padding: 1em 0; 
-  text-align: center;
-  width: 100%
-}
-footer h3{
-  font-size: 14px;
-  font-weight: normal;
-}
-footer h3 strong{
-  display: block;
-}
+
 .descripcion p{
   padding-left: 30px;
   padding-right: 30px;
@@ -69,11 +84,13 @@ footer h3 strong{
 
 
 }
+/*tiempo libre img*/
 img{
   max-width: 100%;
-display: flex;
-z-index: 5;
+ display: flex;
+ z-index: 5;
 }
+
 /*que hago parallax*/
 .content{
   position: relative;
@@ -108,30 +125,59 @@ z-index: 5;
   text-align: center;
   color: #fff;
   padding-left: 30px;
-  text-shadow: 0px 0px 14px rgba(0,0,0,0.75);
+  text-shadow: 0px 5px 10px rgba(255,255,255,0.75);
+  box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
+  padding-bottom: 30px;
+ /*background:  #E8E8E8;*/
+}
+/*education*/
+.educacion{
+  background: #7c74b1;
+  /*box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);*/
+  padding: 10px;
+}
+.logros{
+  box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
+  background: #98c659;
+}
+.logros h1{
+   color: #fff; 
+    padding-bottom: 0.5em;
+    text-align: center;
 }
 /*espiritualidad */
-.content_person_img{
-  background-image: url(../img/spirit.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 305px;
-  opacity: 0.9;
+.content_person{
+    position: relative;
+    background-attachment: fixed;
 }
-html.mobile .content_person {
+#content5{
+    background-image: url(../img/spirit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 305px;
+    opacity: 0.9;
+}
+#content5 p {
+    padding-top: 13vh;
+}
+html.mobile .content {
  height: 100vh;
   padding-top: 20vh;
 }
-.content_person p span{
+
+.content p span{
   width: 80%;
   margin: 0 auto;
   display: block;
   background-color: rgba(8,8,42,0.75);
   color: #fff;
   padding: 20px 20px;
+font-size: 0.9em;
   line-height: 1.4em;
   box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
 }
+
+
 .carousel-grid{
   display: flex;
   flex-wrap: wrap;
@@ -239,3 +285,49 @@ html.mobile .content_person {
   }
 }
 
+/*tiempo libre*/
+.tiempo_libre{
+    background: #3a8282;
+    box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+.tiempo_libre h1{
+    text-align: center;
+    color: #E8E8E8;
+}
+/*estilos formulario contacto*/
+.form_contact input{
+   border-radius: 6px;
+   font-size: 18px;
+   margin: 8px 0;
+   padding: 4px 10px;
+}
+.form_contact button{
+    background-color: #98c629;
+    border: 1px solid #c3ea8d;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 4px 10px;
+    margin: 10px 0;
+    color: #444;
+}
+
+.form_contact button:hover{
+    border: 2px solid #95c4c4;
+    color: #95c4c4;
+}
+/*Footer*/
+footer{
+  background: #555;
+  color: rgba(white,0.5);
+  padding: 1em 0; 
+  text-align: center;
+  width: 100%
+}
+footer h3{
+  font-size: 14px;
+  font-weight: normal;
+}
+footer h3 strong{
+  display: block;
+}
