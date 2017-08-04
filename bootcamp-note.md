@@ -265,3 +265,5 @@ promise
 Su utilidad reside en la fragmentación de código: no todas las partes de una webapp requieren todo el código JavaScript, por eso se __encarga de cargar sólo las partes necesarias en cada petición.__
 * exportar funciones con la palabra _export_ al inicio
 *export default* exporta la funcion declarada por defecto
+
+* permite hacer código asyncronico
