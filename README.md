@@ -10,9 +10,8 @@
 * ~~[Curriculum Vitae with Responsive design]()~~
 * [Carousel grid with Flexbox](flexbox/)
 * [Webtask exercise](webtask/documentacion_flickrBot.md)
-* ~~[Bank Account Exercise]()~~
+* [Bank Account Exercise](bank.js)
 * [JavaScripting Exercises](javascripting)
 * [JSON Humans exercise](humanos.json)
-
 * [functional javascripting](functional_javascript)
 * [proyecto Bootcamp](project_bootcamp)
