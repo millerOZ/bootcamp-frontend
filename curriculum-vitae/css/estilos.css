@@ -24,12 +24,14 @@ header .titular{
 }
 header .titular .titulo{
  /* display: flex;*/
-  font-size: 18px;
   color: white;
   font-weight: normal;
   /*z-index: 10;*/
     padding: 0;
     margin: 0;
+}
+header h3{
+    color: azure;
 }
 header .usuario{
     position: absolute;
@@ -88,7 +90,7 @@ h2 {
 img{
   max-width: 100%;
  display: flex;
- z-index: 5;
+ /*z-index: 5;*/
 }
 
 /*que hago parallax*/
@@ -132,9 +134,13 @@ img{
 }
 /*education*/
 .educacion{
-  background: #7c74b1;
-  /*box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);*/
+  
+  background: #3a8282;
+  box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
   padding: 10px;
+    color:aliceblue;
+    font-size: 20px;
+    padding-bottom: 30px;
 }
 .logros{
   box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
@@ -177,17 +183,11 @@ font-size: 0.9em;
   box-shadow: inset 0px 10px 10px rgba(0,0,0,0.3);
 }
 
-
-.carousel-grid{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 /*carousel tiempo libre*/
 .carousel-gridFreeTime{
-  display: flex;
+   display:flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center;  
 }
 .carousel-gridFreeTime .carousel-itemFreeTime{
   cursor: pointer;
@@ -196,12 +196,10 @@ font-size: 0.9em;
   border: 10px solid white;
   border-radius: 2px;
   margin: 50px 20px;
-  width: 300px;
+  width: 25%;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 }
 .carousel-itemFreeTime img{
-  display: block;
-  width: 100%;
   user-select: none;
 }
 .carousel-itemFreeTime figcaption{
@@ -209,6 +207,12 @@ font-size: 0.9em;
   padding: 10px 0;
   font-size: 14px;
   background: white;
+}
+/*
+.carousel-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .carousel-grid .carousel-item{
   cursor: pointer;
@@ -231,9 +235,10 @@ font-size: 0.9em;
   font-size: 14px;
   height: 40px;
   padding: 10px 5px;
-  height: 105px;
+ 
   background: white;
 }
+*/
 .lacnem{
   width: 600px;
 }
