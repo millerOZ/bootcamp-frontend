@@ -5,7 +5,7 @@
 * [Curriculum Vitae in HTML](curriculum-vitae/index.html)
 * [curriculum-vitae with Styles](curriculum-vitae/css)
 * [curriculum-vitae with Semantic HTML](curriculum-vitae/index.html)
-* ~~[Curriculum Vitae with Contact Form]()~~
+* [Curriculum Vitae with Contact Form](curriculum-vitae/index.html)
 * ~~[Curriculum Vitae Contact Form with DOM selection]()~~
 * [Curriculum Vitae with Responsive design](curriculum-vitae/css)
 * [Carousel grid with Flexbox](flexbox/)
